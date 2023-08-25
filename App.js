@@ -6,7 +6,7 @@ import Todolist from './Todolist';
 function App() {
   return (
     <div className="mybox">
-      <h1>Welcome to Edupoly ReactJS</h1>
+      <h1>ReactJS</h1>
       <Counter></Counter>
       <Todolist></Todolist>
     </div>
