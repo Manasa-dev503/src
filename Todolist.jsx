@@ -26,7 +26,7 @@ function Todolist(props){
             <ul>
                 {
                     todos.map((todo,i)=>{
-                        return <Todo todo={todo} del={()=>{delTodo(i)}}></Todo>
+                        return <Todo todo={todo} delTodo={()=>{delTodo(i)}}></Todo>
                     })
                 }
             </ul>

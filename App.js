@@ -7,6 +7,8 @@ import Texthead from './Textboxheading';
 import Textlist from './Textboxlist';
 import Tododelete from './Todolistdelete';
 import Objprp from './Objprp';
+import Comprp from './RefactoringCompprop';
+import Todolist2 from './Todolist2';
 
 
 function App() {
@@ -34,7 +36,10 @@ function App() {
       <div className='box'>
       <Objprp name="Chennai Super Kings" list={["Dhoni","Raina","Jadeja","Rayudu","Ben Stokes"]}></Objprp>
       </div>
+      <Comprp></Comprp>
+      <Todolist2></Todolist2>
       </div>
+      
      
       
     

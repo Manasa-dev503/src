@@ -6,7 +6,7 @@ function Todo(props){
         <div>
             <li className="mybox">
                 {props.todo}
-                <button onClick={()=>{props.del()}}>Delete</button>
+                <button onClick={()=>{props.delTodo()}}>Delete</button>
                 <button>Done</button>
                 <button>Undo</button>
             </li>
