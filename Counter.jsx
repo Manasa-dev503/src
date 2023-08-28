@@ -1,13 +1,13 @@
 import React from "react";
-function Counter(){
+function Counter(props){
     //state
-    var [count,setcount] = React.useState(0)
+    var [count,setcount] = React.useState(props.s)
     //logic
     function inc(){
-        setcount(count+1)
+        setcount(count+props.i)
     }
     function dec(){
-        setcount(count-1)
+        setcount(count-props.i)
     }
     //Template  [component is a reusable state,logic and template]
     return (
