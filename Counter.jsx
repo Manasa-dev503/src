@@ -9,7 +9,7 @@ function Counter(){
     function dec(){
         setcount(count-1)
     }
-    //Template  component is a reusable state,logic and template
+    //Template  [component is a reusable state,logic and template]
     return (
         <div className="mybox">
             <h1>Counter:{count}</h1>
