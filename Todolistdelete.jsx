@@ -6,15 +6,23 @@ function Tododelete(){
         setlist([...list,x])
     }
    
+    function abc(i){
+        var temp = list
+        temp.splice(i,1)
+        setlist([...temp])
+    }
     
     return (
         <div>
             <input type="text" id="d5"/>
             <button onClick={pqr}>Click here to push value</button>
             {
-                    list.map((a)=>{
-                        return <li>{a}</li>;
-                        <button onClick={abc}></button>
+                    list.map((a,i)=>{
+                        return <li>
+                            {a}
+                            <button onClick={()=>{abc(i)}}>Delete</button>
+                            </li>;
+                        
                     })
                 }
             
