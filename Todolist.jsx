@@ -1,14 +1,15 @@
 import React from "react";
+import Todo from "./Todo";
 
 function Todolist(props){
     //state
     var [todos,setTodos]=React.useState(['mango','apple','cat','banana','orange'])
     //logic
-    function addtodo(){
+    {/*function addtodo(){
         var x = document.getElementById('in').value
         setTodos([...todos,x])
        
-    }
+    }*/}
     function delTodo(i){
         var temp = [...todos]
         temp.splice(i,1)
@@ -19,18 +20,13 @@ function Todolist(props){
     return (
         <div className="mybox">
             <h1>Todolist</h1>
-            <input type="text" id="in"/>
-            <button onClick={addtodo}>Add List</button>
+            <input type="text"/>
+            {/*<button onClick={addtodo}>Add List</button>*/}
             
             <ul>
                 {
                     todos.map((todo,i)=>{
-                        return <li className="mybox">
-                            {todo}
-                            <button onClick={()=>{delTodo(i)}} i={i}>Delete</button>
-                            <button>Done</button>
-                            <button>Undo</button>
-                            </li>
+                        return <Todo todo={todo} del={()=>{delTodo(i)}}></Todo>
                     })
                 }
             </ul>
