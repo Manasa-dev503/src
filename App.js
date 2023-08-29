@@ -11,6 +11,8 @@ import Comprp from './RefactoringCompprop';
 import Todolist2 from './Todolist2';
 
 
+
+
 function App() {
   return (
     <div className="mybox">
@@ -38,6 +40,7 @@ function App() {
       </div>
       <Comprp></Comprp>
       <Todolist2></Todolist2>
+      
       </div>
       
      
