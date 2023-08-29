@@ -26,7 +26,7 @@ function Comprp(props){
         ])
     
 
-    function Addlistdata(props){
+    function Addlistdata(){
         var x = document.getElementById('gh').value
         setdata([...datas,x])
     }
