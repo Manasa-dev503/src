@@ -9,6 +9,7 @@ import Tododelete from './Todolistdelete';
 import Objprp from './Objprp';
 import Comprp from './RefactoringCompprop';
 import Todolist2 from './Todolist2';
+import Counter2 from './Counter2';
 
 
 
@@ -40,6 +41,7 @@ function App() {
       </div>
       <Comprp></Comprp>
       <Todolist2></Todolist2>
+      <Counter2></Counter2>
       
       </div>
       

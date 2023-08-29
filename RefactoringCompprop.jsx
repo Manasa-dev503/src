@@ -27,7 +27,7 @@ function Comprp(props){
     
 
     function Addlistdata(props){
-        var x = document.getElementById('in').value
+        var x = document.getElementById('gh').value
         setdata([...datas,x])
     }
 
@@ -47,8 +47,8 @@ function Comprp(props){
 
     return (
         <div>
-        <input type="text" id="in" />
-        <button onClick={Addlistdata}>Add Task</button><br /><br /><br />
+        <input type="text" id="gh" />
+        <button onClick={()=>{Addlistdata()}}>Add Task</button><br /><br /><br />
         {
         datas.map((data,i)=>{
             return <Prp data={data} dn={()=>{dn(i)}}></Prp>

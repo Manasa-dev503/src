@@ -2,6 +2,7 @@ import React from "react"
 
 
 function Todo(props){
+    console.log("Todo rendered")
     return (
         <div>
             <li className="mybox">
