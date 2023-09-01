@@ -35,11 +35,11 @@ function Accordion(){
       ])
     
      React.useEffect(function(){
-        var y=questions.map((x)=>{
+        var p=questions.map((x)=>{
             return {...x,status:false}
     
           })
-          setQuestions([...y])
+          setQuestions([...p])
      },[])
 
       function expand(i){
