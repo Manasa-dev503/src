@@ -1,7 +1,7 @@
 import React from "react";
 
 function Todolist1(){
-    console.log("First Todolist")
+    //console.log("First Todolist")
     //state
     var [todos,setTodos]=React.useState(['mango','apple','cat','banana','orange'])
     //logic

@@ -27,8 +27,9 @@ function Comprp(props){
     
 
     function Addlistdata(){
-        var x = document.getElementById('gh').value
-        setdata([...datas,x])
+        var s = document.getElementById('gh').value
+        var s1 = {title:s,update:'not completed'}
+        setdata([...datas,s1])
     }
 
     function dn(i){

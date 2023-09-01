@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+//import { useState } from 'react';
 import Counter from './Counter';
 import Todolist from './Todolist';
 import Textbox from './Textboxarray';
@@ -10,13 +11,29 @@ import Objprp from './Objprp';
 import Comprp from './RefactoringCompprop';
 import Todolist2 from './Todolist2';
 import Counter2 from './Counter2';
-
-
-
-
+import Carousal from './Carousal';
+import Countries from './countriesaxios';
+import Products from './productsaxios'
+//import Vacation from './Vacationplan';
+import Counter1 from './Counter1';
+import 'bootstrap/dist/css/bootstrap.css';
+import Reviews from './Reviews';
+import Ref from './Ref';
+//import First from './First'
+//import MyContext from './MyContext';
 function App() {
+  //var [c,setc] = useState(10)
   return (
     <div className="mybox">
+      {/*<MyContext.Provider value={100}>
+        <div className='mybox'>
+          <h1>Welcome to Edupoly ReactJS</h1>
+          <h1>Counter::{c}</h1>
+          <button onClick={()=>{setc(c+1)}}></button>
+          <First>c={c}</First>
+        </div>
+      </MyContext.Provider>
+      
       <h1>ReactJS</h1>
       {/*<img src="/logo192.png"/>*/}
       <img src="/Images/logo192.png"/>
@@ -42,6 +59,16 @@ function App() {
       <Comprp></Comprp>
       <Todolist2></Todolist2>
       <Counter2></Counter2>
+      <Carousal></Carousal>
+      <Countries></Countries>
+      <Products></Products>
+      {/*<Vacation></Vacation>*/}
+      <Counter1></Counter1>
+      {/*<MyContext></MyContext>*/}
+      <Reviews></Reviews>
+      <Ref></Ref>
+      
+      
       
       </div>
       
