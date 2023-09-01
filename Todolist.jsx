@@ -4,10 +4,13 @@ import Todo from "./Todo";
 function Todolist(props){
     //state
     var [todos,setTodos]=React.useState(['mango','apple','cat','banana','orange','guava'])
+    var [nt,setnt] = React.useState("")
     //logic
     function addtodo(){
-        var x = document.getElementById('lm').value
-        setTodos([...todos,x])
+        //var x = document.getElementById("lm").value
+        setTodos([...todos,nt])
+        //setTodos([...todos,x])
+       
        
     }
     function delTodo(i){
@@ -20,7 +23,8 @@ function Todolist(props){
     return (
         <div className="mybox">
             <h1>Todolist</h1>
-            <input type="text" id="lm"/>
+            <input type="text" onChange={(ev)=>{setnt(ev.target.value)}}/>
+            {/*<input type="text" id="lm"/>*/}
             <button onClick={addtodo}>Add List</button>
             
             <ul>
