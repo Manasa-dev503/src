@@ -14,7 +14,6 @@ function Tododelete(){
             {
                     list.map((a)=>{
                         return <li>{a}</li>;
-                        <button onClick={abc}></button>
                     })
                 }
             
