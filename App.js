@@ -21,6 +21,9 @@ import Reviews from './Reviews';
 import Ref from './Ref';
 //import First from './First'
 //import MyContext from './MyContext';
+import Accordion from './Accordion';
+import Shopping from './Shoppingcart';
+
 function App() {
   //var [c,setc] = useState(10)
   return (
@@ -67,6 +70,8 @@ function App() {
       {/*<MyContext></MyContext>*/}
       <Reviews></Reviews>
       <Ref></Ref>
+      <Accordion></Accordion>
+      <Shopping></Shopping>
       
       
       

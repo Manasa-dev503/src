@@ -53,7 +53,6 @@ function ghi(){
     }else{
         setx(x--);
     }
-
 }
 return (
     <div>
@@ -72,8 +71,7 @@ return (
 
                     </div>
             </div>
-                
-}
+            }
         </center>
     </div>
 
